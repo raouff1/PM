@@ -1,0 +1,42 @@
+.app {
+    background-color: var(--color-gray-100);
+
+    .container {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: var(--color-gray-200);
+        padding: 50px 0;
+
+        @media (min-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+    }
+
+    .app-text {
+        padding: 50px;
+        margin-left: 120px;
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+
+            li {
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+
+}
+

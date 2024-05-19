@@ -1,0 +1,62 @@
+.elements {
+    .container {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        @media (min-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        *, *::before, *::after {
+        box-sizing: border-box;
+        }
+
+        .elements-image {
+            width: 110%;
+            height: auto;
+        }
+
+        .elements-text {
+            padding: 50px;
+            margin-left: 120px;
+
+            h1 {
+                font-size: 40px;
+                margin-bottom: 10px;
+            }
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+
+                li {
+                    padding-left: 20px;
+                    background: url('/images/bx-check-circle.svg') left center no-repeat;
+                    background-size: 16px 16px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .learn-more-btn {
+                display: block;
+                padding: 10px 20px;
+                background-color: #6366f1;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 5px;
+                margin-top: 20px;
+
+                i {
+                    margin-left: 10px;
+                }
+            }
+
+            @media (min-width: 1200px) {
+                .learn-more-btn {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
